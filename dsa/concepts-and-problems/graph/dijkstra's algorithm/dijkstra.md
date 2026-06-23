@@ -2,6 +2,9 @@
 
 Dijkstra's algorithm is a popular algorithm used to find the shortest path from a source vertex to all other vertices in a weighted graph. 
 
+- It works only for graphs with non-negative edge weights.
+- It works for both directed and undirected graphs.
+
 ## Using Priority Queue (Min-Heap)
 
 ```cpp
