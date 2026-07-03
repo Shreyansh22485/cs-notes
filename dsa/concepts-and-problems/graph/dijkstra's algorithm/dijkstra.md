@@ -22,6 +22,10 @@ void dijkstra(int V, vector<pair<int,int>> adj[], int S) {
         int node = pq.top().second;
         pq.pop();
 
+        // Optimization: If we've already found a shorter path to this node, skip it.
+        // This handles stale entries in the priority queue.
+        if (distance > dist[node]) continue;
+
         for (auto &neighbor : adj[node]) {
             int nextNode = neighbor.first;
             int weight = neighbor.second;

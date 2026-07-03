@@ -14,6 +14,14 @@ Key properties of modular arithmetic:
 (a / b) mod m = (a mod m * b^(-1) mod m) mod m
 ```
 
+**NOTE**: Why 10^9+7 is used as modulus?
+
+- It is a large prime number.So we can calculate modular inverse for every number from 1 to $10^9+6$.
+- It is within the range of 32-bit integer
+- It is a common choice for competitive programming problems
+- It helps to avoid overflow and underflow
+
+
 ## Modular Inverse:
 
 In modular arithmetic, the modular inverse of an integer 'a' with respect to a modulus 'm' is an integer 'x' such that:
@@ -79,3 +87,5 @@ long long modularnCr(int n, int r){
     return a * findPower(b,M-2)%M;
 }
 ```
+
+
