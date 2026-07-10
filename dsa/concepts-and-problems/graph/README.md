@@ -25,5 +25,4 @@ Below is a detailed guide to all graph sub-concepts implemented in this reposito
 
 ---
 
-> [!TIP]
-> Keep your concept notes up to date by following the structured templates located in the main [dsa/README.md](file:///d:/cs-notes/dsa/README.md).
+
